@@ -1,0 +1,140 @@
+@font-face{
+    font-family: Pixelarri;
+    src: url(/img/Pixellari.ttf)
+}
+@font-face {
+    font-family: Gumball;
+    src: url(/img/04B_30__.TTF);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/bg1.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.logo {
+    font-family: Gumball;
+    font-size: 30px;
+    text-align: center;
+}
+.logo .fire {
+    width: 45px;
+}
+.title {
+    margin-top: -2px;
+    font-family: Pixelarri;
+    font-size: 60px;
+    text-align: center;
+}
+#elements {
+    align-items: center; 
+    height: 100vh; 
+}
+#frog {
+    width: 40px;
+    top: -1200px;
+    left: -750px;
+    z-index: 4;
+    transition: all 1.4s cubic-bezier(.1,.47,.69,1.05);
+}
+.car {
+    position: absolute;
+    width: 55px;
+    top: 200px;
+    left: 500px;
+}
+.truck {
+    position: absolute;
+    width: 65px;
+    top: 200px;
+    left: 500px;
+}
+.nope {
+    position: absolute;
+    
+}
+.first {
+    z-index: 35;
+    top: 213px;
+    left: -6px;
+}
+.second {
+    z-index: 25;
+    top: 530px;
+    left: 818px;
+}
+.third {
+    z-index: 15;
+    top: 105px;
+    left: 222px;
+}
+.fourth {
+    z-index: 5;
+    top: 444px;
+    left: 994px;
+}
+#board {
+    text-align: center;
+    margin-top: -50px;
+    position: absolute;
+    top: 350px;
+    left: calc(50vw - 550px);
+    width: 1100px;
+    transition: all 0.4s ease;
+}
+.init {
+    margin-top: -50px;
+}
+.layer {
+    position: relative;
+}
+.subsequent {
+    margin-top: -700px;
+}
+#layer1 {
+    top: -18px;
+    z-index: 40;
+}
+#layer2 {
+    top: -36px;
+    z-index: 30;
+}
+#layer3 {
+    top: -54px;
+    z-index: 20;
+}
+#layer4 {
+    top: -72px;
+    left: 22px;
+    z-index: 10;
+}
+
+
+/* @media screen and (max-width: 1200px) {
+    .board {
+        top: 350px;
+        left: calc(50vw - 570px);
+    }
+    #elements .layer {
+        width: 850px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .board {
+        top: 360px;
+        left: calc(50vw - 300px);
+        width: 600px;
+    }
+    #elements .layer {
+        width: 600px;
+    }
+} */
+
+#elements .start {
+    text-align: center;
+    cursor: pointer;
+}
