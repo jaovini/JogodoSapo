@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat; 
     background-position: center; 
     background-attachment: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .logo {
     font-family: Gumball;
@@ -35,6 +35,7 @@ body {
     height: 100vh; 
 }
 #frog {
+    position: relative;
     width: 40px;
     top: -1200px;
     left: -750px;
@@ -46,20 +47,53 @@ body {
     width: 55px;
     top: 200px;
     left: 500px;
+    transition: all 6s linear;
+}
+.police {
+    position: absolute;
+    width: 55px;
+    top: 200px;
+    left: 500px;
+    transition: all 4.1s linear;
 }
 .truck {
     position: absolute;
-    width: 65px;
+    width: 80px;
     top: 200px;
     left: 500px;
+    transition: all 10s linear;
+}
+.fighter {
+    position: absolute;
+    transition: all 0.916s linear;
+    width: 150px;
+}
+.race {
+    position: absolute;
+    width: 55px;
+    top: 200px;
+    left: 500px;
+    transition: all 2.95s linear;
 }
 .nope {
     position: absolute;
-    
+    top: 300px;
+    left: 500px;
+    width: 60px;
+    transition: all 1s ease;
+    opacity: 1;
+    z-index: 1000;
+}
+.warning {
+    position: absolute;
+    width: 60px;
+    transition: all 3s ease;
+    opacity: 1;
+    z-index: 1000;
 }
 .first {
     z-index: 35;
-    top: 213px;
+    top: 223px;
     left: -6px;
 }
 .second {
@@ -89,27 +123,31 @@ body {
 .init {
     margin-top: -50px;
 }
-.layer {
-    position: relative;
-}
 .subsequent {
     margin-top: -700px;
 }
 #layer1 {
-    top: -18px;
+    position: absolute;
+    top: 700px;
+    left: 8px;
     z-index: 40;
 }
 #layer2 {
-    top: -36px;
+    position: absolute;
+    top: 700px;
+    left: 8px;
     z-index: 30;
 }
 #layer3 {
-    top: -54px;
+    position: absolute;
+    top: 700px;
+    left: 8px;
     z-index: 20;
 }
 #layer4 {
-    top: -72px;
-    left: 22px;
+    position: absolute;
+    top: 700px;
+    left: 8px;
     z-index: 10;
 }
 
